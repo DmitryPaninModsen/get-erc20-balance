@@ -1,0 +1,33 @@
+{
+  "name": "get-erc20-balance",
+  "version": "1.0.0",
+  "description": "This package allows getting balance of any given erc20 contract for any given wallet address using “balanceOf” method of ERC20 contract on any Ethereum chain.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitryPaninModsen/get-erc20-balance.git"
+  },
+  "author": "DmitryPaninModsen<dmitry.panin@modsen-software.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitryPaninModsen/get-erc20-balance/issues"
+  },
+  "homepage": "https://github.com/DmitryPaninModsen/get-erc20-balance#readme",
+  "scripts": {
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "build": "tsup ./src/index.ts --format cjs,esm --dts"
+  },
+  "dependencies": {
+    "ethers": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  }
+}
